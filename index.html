@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documentation for My Shopify Theme</title>
+    <link rel="stylesheet" href="css/styles.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  </head>
+  <body>
+    <header class="relative">
+        <div class="container mx-auto flex items-center justify-between p-4">
+          <a href="#">
+            <img src="images/light-logo.svg" class="w-12"alt="Logo">
+          </a>
+          <p class="text-[#2e332e]"><strong>BAAD.</strong> Shopify theme</p>
+        </div>
+    </header>
+    <!-- The main container -->
+<div class="flex relative">
+    <!-- The sidebar container -->
+    <div class="bg-[#2e332e] w-64 h-screen absolute top-0 left-0 z-10 overflow-y-scroll" id="sidebar">
+        <!-- The open button -->
+        <div class="relative flex">
+            <!-- The sidebar links -->
+            <nav class="flex-1 mt-12 p-4 mb-8 rounded-xl text-white border-2 border-solid border-[#2e332e1c]">
+                <h1 class="font-semibold text-lg">Theme Settings: </h1>
+                <ul class="flex flex-col text-roboto font-light text-md gap-y-6  pt-8 mb-12  pl-4">
+                    <li><a href="#colors" class="smooth-scroll"><h4>Colors</h4></a></li>
+                    <li><a href="#typography" class="smooth-scroll"><h4>Typography</h4></a></li>
+                    <li><a href="#buttons" class="smooth-scroll"><h4>Buttons</h4></a></li>
+                    <li><a href="#layout" class="smooth-scroll"><h4>Layout</h4></a></li>
+                    <li><a href="#badges" class="smooth-scroll"><h4>Badges</h4></a></li>
+                    <li><a href="#social_media" class="smooth-scroll"><h4>Social Media</h4></a></li>
+                    <li><a href="#favicon" class="smooth-scroll"><h4>Favicon</h4></a></li>
+                    <li><a href="#filters" class="smooth-scroll"><h4>Filters</h4></a></li>
+                    <li><a href="#product_card" class="smooth-scroll"><h4>Product Card</h4></a></li>
+                    <li><a href="#pills" class="smooth-scroll"><h4>Variant Pills</h4></a></li>
+                    <li><a href="#inputs" class="smooth-scroll"><h4>Inputs</h4></a></li>
+                  </ul>
+                  
+                <h1 class="font-semibold text-lg">Sections: </h1>
+                <ul class="flex flex-col text-roboto font-light text-md gap-y-6 pt-8 mb-12 pl-4">
+                    <li><a href="#announcement_bar" class="smooth-scroll"><h4>Announcement Bar</h4></a></li>
+                    <li><a href="#header" class="smooth-scroll"><h4>Header</h4></a></li>
+                    <li><a href="#image_with_text" class="smooth-scroll"><h4>Image with Text</h4></a></li>
+                    <li><a href="#image_banner" class="smooth-scroll"><h4>Image Banner</h4></a></li>
+                    <li><a href="#slideshow" class="smooth-scroll"><h4>Slideshow</h4></a></li>
+                    <li><a href="#video_banner" class="smooth-scroll"><h4>Video Banner</h4></a></li>
+                    <li><a href="#newsletter" class="smooth-scroll"><h4>Newsletter</h4></a></li>
+                    <li><a href="#featured_collection" class="smooth-scroll"><h4>Featured Collection</h4></a></li>
+                    <li><a href="#featured_product" class="smooth-scroll"><h4>Featured Product</h4></a></li>
+                    <li><a href="#footer" class="smooth-scroll"><h4>Footer</h4></a></li>
+                </ul>
+                  
+            </nav>
+            <button class="toggle-button relative text-white w-12 flex items-start justify-center" id="toggle-sidebar">
+                <svg class="sticky top-4 w-full" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="6" width="25" height="3" rx="1" fill="currentColor"/>
+                    <rect x="2" y="12" width="20" height="3" rx="1" fill="currentColor"/>
+                    <rect x="2" y="18" width="15" height="3" rx="1" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- The content container -->
+    <div class="w-full h-screen p-3 overflow-auto pb-16" id="content">
+        <!-- The content sections -->
+        <h1 class="text-center text-3xl mt-4 text-[#2e332e] font-semibold">Theme Settings</h1>
+        <section id="colors">
+            <div class="bg-white p-6">
+                <div class="mb-4">
+                  <h2 class="text-2xl mb-4  text-roboto">Colors :</h2>
+                  <p class="text-md">Customize the colors of various elements on the theme, including the main header, homepage, product pages, blog, and footer.</p>
+                  <div class="mt-8 p-4 rounded-xl border-2 border-solid border-[#2e332e1c] p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                  <ul class="">
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Home header background:</h4>
+                        <p class="mt-4 ml-4">Used for changing the background of the top main header.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Home header icons color:</h4>
+                        <p class="mt-4 ml-4">Used for changing the colors of the top main header icons.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Home header navigation text color:</h4>
+                        <p class="mt-4 ml-4">Used for changing the text color of the top main header navigation.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Separator line color: </h4>
+                        <p class="mt-4 ml-4">Used for changing the header's separation bottom line color if it's enabled (you can enable it from the header).</p>
+                    </li>
+
+                    <!--Sticky Header Colors-->
+
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sticky header background:</h4>
+                        <p class="mt-4 ml-4">Used for changing the background color of the sticky header if it's anabled (YOU CAN ENABLE FROM THE HEADER SECTION).</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sticky header icons color:</h4>
+                        <p class="mt-4 ml-4">Used for changing the colors of the the sticky header icons.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sticky header text color:</h4>
+                        <p class="mt-4 ml-4">Used for changing the text color of the sticky header navigation.</p>
+                    </li>
+
+                    <!--Menu and cart drawers-->
+
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Drawer Background:</h4>
+                        <p class="mt-4 ml-4">Used for changing background color of the drawers like the menu and cart on mobile.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Drawer Text:</h4>
+                        <p class="mt-4 ml-4">Used for changing the text color of the drawers.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Borders color:</h4>
+                        <p class="mt-4 ml-4">Used for changing the borders color inside the drawers.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Search Background:</h4>
+                        <p class="mt-4 ml-4">Used for changing background color of the drawers like the search container.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Megamenu Background:</h4>
+                        <p class="mt-4 ml-4">Used for changing background color of the Megamenu (if it's anabled).</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Megamenu Primary Text Color:</h4>
+                        <p class="mt-4 ml-4">Used for changing Main text color of the Megamenu.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Search Background:</h4>
+                        <p class="mt-4 ml-4">Used for changing Main text color of the Megamenu.</p>
+                    </li>
+
+                <!--Headings-->
+
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Primary Heading Color:</h4>
+                        <p class="mt-4 ml-4">Used for changing Primary heading color of the website.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Secondary Heading Color:</h4>
+                        <p class="mt-4 ml-4">Used for changing Secondary heading color of the website.</p>
+                    </li>
+
+                <!--Texts-->
+
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Primary Text Color:</h4>
+                        <p class="mt-4 ml-4">Used for changing Primary Text color of the website.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Secondary Text Color:</h4>
+                        <p class="mt-4 ml-4">Used for changing Secondary Text color of the website.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sub Text Color:</h4>
+                        <p class="mt-4 ml-4">Used for changing third (used for subtitles) Text color of the website.</p>
+                    </li>
+
+                <!--Page Backgrounds-->
+
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Primary Background:</h4>
+                        <p class="mt-4 ml-4">Used for changing Primary Background color this would be also the background of the website.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Secondary Background:</h4>
+                        <p class="mt-4 ml-4">Used for changing Secondary Background color of the sections you can choose this color on any section you want.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">gradient Background:</h4>
+                        <p class="mt-4 ml-4">Used for changing Gradient background color.</p>
+                    </li>
+
+                <!--Primary/Secondary Button-->
+
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Button background:</h4>
+                        <p class="mt-4 ml-4">Used for changing Primary/Secondary Button background color.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Button background on Hover:</h4>
+                        <p class="mt-4 ml-4">Used for changing Primary/Secondary Button background color when the mouse is hovering over it.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Button label:</h4>
+                        <p class="mt-4 ml-4">Used for changing the text color of the Primary/Secondary Button.</p>
+                    </li> 
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Button label on Hover :</h4>
+                        <p class="mt-4 ml-4">Used for changing the text color of the Primary/Secondary Button when the mouse is hovering over it.</p>
+                    </li>  
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Paragraph Link Color :</h4>
+                        <p class="mt-4 ml-4">Used for changing the text color of the paragraph links.</p>
+                    </li>
+                <!-- Buy now Button-->
+
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Buy now Button background :</h4>
+                        <p class="mt-4 ml-4">Used for changing buy now Button background color.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Buy now Button label:</h4>
+                        <p class="mt-4 ml-4">Used for changing buy now Button text color.</p>
+                    </li>   
+                <!-- Overlay Backgrounds-->
+
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Primay Overlay color:</h4>
+                        <p class="mt-4 ml-4">Used for changing the Primary Image Overlay color (used in Image banner,collection images).</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Secondary Overlay color:</h4>
+                        <p class="mt-4 ml-4">Used for changing the Secondary Image Overlay color (used in Image banner,collection images).</p>
+                    </li> 
+                <!-- Price-->
+
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Current Price :</h4>
+                        <p class="mt-4 ml-4">Used for changing the Current Price text color.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Previous Price :</h4>
+                        <p class="mt-4 ml-4">Used for changing the Previous Price text color if it's exist.</p>
+                    </li>
+                    <li class="text-md mb-8">
+                        <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Amount Saved :</h4>
+                        <p class="mt-4 ml-4">Used for changing the Saved price text color.</p>
+                    </li>
+
+                </ul>
+                  </div>
+                </div>
+           </div>              
+        </section>
+        <section id="typography">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Typography:</h2>
+                    <p class="text-md">the typography that you can change in the theme settings.</p>
+                    <div class="mt-8 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">heading font:</h4>
+                                <p class="mt-4 ml-4">used to change the type of the font of the headings</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Capitalize:</h4>
+                                <p class="mt-4 ml-4">to used to make the titles uppercase</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">banner's heading:</h4>
+                                <p class="mt-4 ml-4">used the change the size of the headings in (image banner, slideshow, email...)</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">title's Heading size:</h4>
+                                <p class="mt-4 ml-4">used the change the size of the headings in other sections like (featured collection, tistmonials...)</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Headings Spacing:</h4>
+                                <p class="mt-4 ml-4">used the change the spacing between heading letters</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">body text font:</h4>
+                                <p class="mt-4 ml-4">used to change the type of the font of the website text</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">text size:</h4>
+                                <p class="mt-4 ml-4">used the change the size of the website text</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">body text Spacing:</h4>
+                                <p class="mt-4 ml-4">used the change the spacing between text letters</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Navigation Heading font:</h4>
+                                <p class="mt-4 ml-4">used to apply the headings font to the header navigation menu</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Navigation bold font:</h4>
+                                <p class="mt-4 ml-4">use the bold font in the header navigation menu</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="buttons">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Buttons:</h2>
+                    <p class="text-md">the typography that you can change in the theme settings.</p>
+                    <div class="mt-8 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Primary Button:</h4>
+                                <p class="mt-4 ml-4">used to change style of the Primary button:
+                                    <ul class="mt-4 ml-4">
+                                        <li class="mt-4">
+                                            <h5 class="text-sm font-bold">- Button outline style</h5>
+                                            <p class="mt-2 ml-4">used to add border to the buttton and a transparent background</p>
+                                        </li>
+                                        <li class="mt-4">
+                                            <h5 class="text-sm font-bold">- Button radius</h5>
+                                            <p class="mt-2 ml-4">used to add border radius to the buttton</p>
+                                        </li>
+                                        <li class="mt-4">
+                                            <h5 class="text-sm font-bold">- Button anable hover effect</h5>
+                                            <p class="mt-2 ml-4">used to add style to the button when the mouse is over it</p>
+                                        </li>
+                                        <li class="mt-4">
+                                            <h5 class="text-sm font-bold">- Button hover effect</h5>
+                                            <p class="mt-2 ml-4">used to select the hover effect animation from: 'top/left/bottom/right'</p>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Secondary Button:</h4>
+                                <p class="mt-4 ml-4">used to change style of the Secondary button:
+                                    <ul class="mt-4 ml-4">
+                                        <li class="mt-4">
+                                            <h5 class="text-sm font-bold">- Button outline style</h5>
+                                            <p class="mt-2 ml-4">used to add border to the buttton and a transparent background</p>
+                                        </li>
+                                        <li class="mt-4">
+                                            <h5 class="text-sm font-bold">- Button radius</h5>
+                                            <p class="mt-2 ml-4">used to add border radius to the buttton</p>
+                                        </li>
+                                        <li class="mt-4">
+                                            <h5 class="text-sm font-bold">- Button anable hover effect</h5>
+                                            <p class="mt-2 ml-4">used to add style to the button when the mouse is over it</p>
+                                        </li>
+                                        <li class="mt-4">
+                                            <h5 class="text-sm font-bold">- Button hover effect</h5>
+                                            <p class="mt-2 ml-4">used to select the hover effect animation from: 'top/left/bottom/right'</p>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="layout">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Layout:</h2>
+                    <p class="text-md">You can change the width of the container of the website from the "Page width" and "Articles width".</p>
+                    <div class="mt-8 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Page width:</h4>
+                                <p class="mt-4 ml-4">used to change the width of the sections on the page</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Articles width:</h4>
+                                <p class="mt-4 ml-4">used to change the width of the Contact and the Blog article pages </p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="badges">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Badges:</h2>
+                    <p class="text-md">You can change the colors of the badges on the product card like "Sale", "Slod out", "New".</p>
+                    <div class="mt-8 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sale badge:</h4>
+                                <p class="mt-4 ml-4">used to change background and text colors for the 'Sale' badge</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sold out badge:</h4>
+                                <p class="mt-4 ml-4">used to change background and text colors for the 'Sold Out' badge</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">New badge:</h4>
+                                <p class="mt-4 ml-4">used to change background and text colors for the 'New' badge</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Header Cart badge:</h4>
+                                <p class="mt-4 ml-4">used to change background color of the 'Cart' badge on the header (when user add products to the cart a little circle displays with the cart icon)</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="social_media">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Social media:</h2>
+                    <p class="text-md">You can add your social media links so you can use them on your website footer/header.</p>
+            </div>
+        </section>
+        <section id="favicon">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Favicon :</h2>
+                    <p class="text-md">You can add your favicon to your website, the favicon is the icon of your website that displays on the tab.</p>
+            </div>
+        </section>
+        <section id="filters">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Filters:</h2>
+                    <p class="text-md">You can change the colors of the Selected filter and Price range slider on the collection page.</p>
+                    <div class="mt-8 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Price range slider :</h4>
+                                <p class="mt-4 ml-4">used to change background color of the slider circle and progress on the collection page</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Selected Filter :</h4>
+                                <p class="mt-4 ml-4">used to change background and text colors of the selected filter on the collection page</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="product_card">  
+            <div class="bg-white mb-4 p-6">
+                <h2 class="text-2xl mb-4  text-roboto">Product Card:</h2>
+                <p class="text-md">Used to change the style of the product card.</p>
+                <div class="mt-8 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                    <ul class="">
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Product Title Color :</h4>
+                            <p class="mt-4 ml-4">used to change the color of the product card title</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Title font type :</h4>
+                            <p class="mt-4 ml-4">used to change the type of the product title card font: Heading/Body</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Add Product Card Radius :</h4>
+                            <p class="mt-4 ml-4">used to add radius to the product card</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Show second image on hover :</h4>
+                            <p class="mt-4 ml-4">used to display the secondary image of the product when hovering over the product card</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Show Vendor :</h4>
+                            <p class="mt-4 ml-4">used to add the Vendor</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Product Image Style :</h4>
+                            <p class="mt-4 ml-4">used to change the product card image ratio</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Image Radius :</h4>
+                            <p class="mt-4 ml-4">used to add radius to the product card image</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Text alignment :</h4>
+                            <p class="mt-4 ml-4">used to change the product card text alignment Left/Center/Right</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Enable Color Swatches :</h4>
+                            <p class="mt-4 ml-4">used to display other product variant on the product card</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Selected Variant Color :</h4>
+                            <p class="mt-4 ml-4">used to change the color of the selected variant</p>
+                        </li>
+                        <li class="text-md mb-8">
+                            <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Hide Saved Price :</h4>
+                            <p class="mt-4 ml-4">used to add/hide the amount saved for "On Sale" products</p>
+                        </li>
+                    </ul>         
+                </div>
+            </div>
+        </section>
+        <section id="pills">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Variant Pills:</h2>
+                    <p class="text-md">Used to change the colors of the variant pills in the product description.</p>
+                    <div class="mt-8 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Pills Background :</h4>
+                                <p class="mt-4 ml-4">used to change default background color of the product variants</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Pills Background :</h4>
+                                <p class="mt-4 ml-4">used to change default text color of the product variants</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Pills Background :</h4>
+                                <p class="mt-4 ml-4">used to change default border color of the product variants</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Pills Background :</h4>
+                                <p class="mt-4 ml-4">used to change the background color of the selected product variants</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Pills Background :</h4>
+                                <p class="mt-4 ml-4">used to change the text color of the selected product variants</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Pills Background :</h4>
+                                <p class="mt-4 ml-4">used to change the border color of the selected product variants</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="inputs">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Inputs:</h2>
+                    <p class="text-md">You can change the colors,thinkness and border radius of the input element.</p>
+                    <div class="mt-8 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Inputs Border Color :</h4>
+                                <p class="mt-4 ml-4">used to change the input border color.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Thickness :</h4>
+                                <p class="mt-4 ml-4">used to change width of the input border</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Corner radius :</h4>
+                                <p class="mt-4 ml-4">used to change radius of the input border</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+
+
+        <h1 class="text-center text-3xl mt-12 text-[#2e332e] font-semibold">Sections</h1>
+
+
+
+        <section id="general">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">General settings:</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">CONTENT SETTINGS :</h4>
+                                <p class="mt-4 ml-4">used to change to position of the content Vertically / Horizontally.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">SECTION PADDING :</h4>
+                                <p class="mt-4 ml-4">used to change add section padding from the top and bottom.</p>
+                            </li>
+                        </ul>         
+                    </div>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Heading :</h4>
+                                <p class="mt-4 ml-4">used to add heading and sub heading and choose it's color.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Text :</h4>
+                                <p class="mt-4 ml-4">used to add content and change it's color.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Button :</h4>
+                                <p class="mt-4 ml-4">used to add button by add label, link and change color.</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="announcement_bar">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Announcement Bar:</h2>
+                    <p class="text-md">You can display a message or notification at the top of your website. It is typically used to promote sales, new products, or other important information and can be customized in terms of text, appearance.</p>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Header Selectors :</h4>
+                                <p class="mt-4 ml-4">used to add Language/Country selectors and the background/text colors.</p>
+                            </li>
+                        </ul>         
+                    </div>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Text / Link :</h4>
+                                <p class="mt-4 ml-4">used to add announcement text and add link.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Open in new window :</h4>
+                                <p class="mt-4 ml-4">used to open link (optional) in another tab.</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="header">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Header:</h2>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Fixed header settings :</h4>
+                                <p class="mt-4 ml-4">used to style the main header, add a transparent background on the home page as well as the collection page.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sticky header settings :</h4>
+                                <p class="mt-4 ml-4">used to add a sticky header when scrolling down, also you can add blury background to the header.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">General settings :</h4>
+                                <p class="mt-4 ml-4">used to change the position of the header elements.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Menu :</h4>
+                                <p class="mt-4 ml-4">used to select the header navigation menu and add a border bottom.</p>
+                            </li>
+                        </ul>         
+                    </div>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Header logos :</h4>
+                                <p class="mt-4 ml-4">Used to add logo to main and sticky header, resize for mobile/desktop devices.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Mega Menu :</h4>
+                                <p class="mt-4 ml-4">
+                                    used to add a mega menu:
+                                    <ul class="text-sm mt-2 ml-8 font-bold list-decimal">
+                                        <li>Choose the link from the header navigation</li>
+                                        <li>Put the menu navigation link name in <strong class="underline">Menu item</strong></li>
+                                        <li>Add promotions (choose the image, title, subtitle, link)</li>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="image_with_text">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Image with text:</h2>
+                    <p class="text-md">Displays one or two images with optional links, buttons and description.</p>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Content Background :</h4>
+                                <p class="mt-4 ml-4">used to change the text (content) background color.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Content first :</h4>
+                                <p class="mt-4 ml-4">used to change the position of the content to left.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">First image settings :</h4>
+                                <p class="mt-4 ml-4">the large image, you can change the position of the image, and add link or radius to it.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">First image settings :</h4>
+                                <p class="mt-4 ml-4">the small image, you can change the position of the image, and add link or radius to it.</p>
+                            </li>
+                        </ul>         
+                    </div>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Text / Link :</h4>
+                                <p class="mt-4 ml-4">used to add announcement text and add link.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Open in new window :</h4>
+                                <p class="mt-4 ml-4">used to open link (optional) in another tab.</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="image_banner">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Image banner:</h2>
+                    <p class="text-md">Used to display the hero image with optional links, buttons, title and description.</p>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Image settings :</h4>
+                                <p class="mt-4 ml-4">used to add the the image for destktop and mobile (if there is no mobile image the desktop image will be used), add link to the image and add Parallax effect.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Overlay :</h4>
+                                <p class="mt-4 ml-4">used to add an overlay to the image with the ability to change (color, opacity) of the overlay .</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="slideshow">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Slideshow :</h2>
+                    <p class="text-md">The same as the image banner but with multiple images.</p>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Image height :</h4>
+                                <p class="mt-4 ml-4">Sets how tall you want the slides to be, adjust depending on your images..</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Allow the image animation :</h4>
+                                <p class="mt-4 ml-4">Used to add zoom-in animation the image.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Add arrows :</h4>
+                                <p class="mt-4 ml-4">Used to add prev/next buttons.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Anable Autoplay :</h4>
+                                <p class="mt-4 ml-4">Controls whether or not the sides changes the images automatically.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Change slides every :</h4>
+                                <p class="mt-4 ml-4">Controls how often the slides change.</p>
+                            </li>
+                        </ul>         
+                    </div>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Slide :</h4>
+                                <p class="mt-4 ml-4">Each slide is an image banner you can add title,text,link and mobile/Desktop images.</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="video_banner">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Video Banner :</h2>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Section Full width :</h4>
+                                <p class="mt-4 ml-4">By anable in this the video will take the full width of the website.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Video Source (from local files) :</h4>
+                                <p class="mt-4 ml-4">Use this field to link to a file from your shopify admin <a class="docs_link" href="https://help.shopify.com/en/manual/shopify-admin/productivity-tools/file-uploads" target="_blank">Check how to upload files</a> .</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Hide Icons Even when hovering :</h4>
+                                <p class="mt-4 ml-4">Shows pause/play/sound buttons (Depending on the type of video and how you use this section, you may want to give the customers the ability to go back and forth and pause the video, or to just use it decoratively), You can also change the controls color.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Autoplay :</h4>
+                                <p class="mt-4 ml-4">Controls if the video will play by itself without user interaction (if you have controls hidden, you need to enable autoplay, otherwise the customers won't be able to play the vide)..</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Loop :</h4>
+                                <p class="mt-4 ml-4">Controls if the video will play again if the video ends.</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="newsletter">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Email signup :</h2>
+                    <p class="text-md">Used for collecting customer email addresses.</p>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Section Background Image :</h4>
+                                <p class="mt-4 ml-4">Used to add a background image to the email signup</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Section Background :</h4>
+                                <p class="mt-4 ml-4">Used to add a background color to the email signup or it can be used as the overlay color</p>
+                            </li>
+                        </ul>         
+                    </div>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Heading :</h4>
+                                <p class="mt-4 ml-4">Used as a title inside the section.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sub Heading :</h4>
+                                <p class="mt-4 ml-4">Used to add text into the section.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Email form :</h4>
+                                <p class="mt-4 ml-4">Displays the email form used for collecting customer addresses.</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="collection_list">
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Collection list :</h2>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Header :</h4>
+                                <p class="mt-4 ml-4">Used to add heading, sub heading and align the text</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Desktop Layout :</h4>
+                                <p class="mt-4 ml-4">Used to choose the grid style depending on how many collectionsare available, it's automatically optimized for mobile. </p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">One Column on Mobile :</h4>
+                                <p class="mt-4 ml-4">Used to display on collection per row for mobile. </p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Collections settings :</h4>
+                                <p class="mt-4 ml-4">Used to Styling the the collections (Radius/ Overlay / Alignement). </p>
+                            </li>
+                        </ul>         
+                    </div>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Collection :</h4>
+                                <p class="mt-4 ml-4">Displays the selected collection. add it's title and sub title and display the image.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sub Heading :</h4>
+                                <p class="mt-4 ml-4">Used to add text into the section.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Email form :</h4>
+                                <p class="mt-4 ml-4">Displays the email form used for collecting customer addresses.</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="custome_liquid">  
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Custom Liquid :</h2>
+                    <p class="text-md">Used to insert custom liquid code into the page.</p>
+                    <p><a class="docs_link" href="https://shopify.dev/api/liquid">Liquid reference (Shopify)</a></p>
+            </div>
+        </section>
+        <section id="rich_text">
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Rich Text :</h2>
+                    <p class="text-md">Used for writing paragraphs.</p>
+                
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Heading :</h4>
+                                <p class="mt-4 ml-4">Used as a title inside the section.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Text :</h4>
+                                <p class="mt-4 ml-4">Paragraph of text that can include links, bold and italic text.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Button :</h4>
+                                <p class="mt-4 ml-4">Displays button and you can change the label/link/type .</p>
+                            </li>
+                        </ul>        
+                    </div>
+            </div>
+        </section>
+        <section id="blog_posts">
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Blog Posts :</h2>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Grid Layout :</h4>
+                                <p class="mt-4 ml-4">Choose how many bolgs per row for Desktop/Tablet/Mobile.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Blog :</h4>
+                                <p class="mt-4 ml-4">Choose the blog that you want to display articles from.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Show Author :</h4>
+                                <p class="mt-4 ml-4">Displays the name of the author on the blog articles.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Show date :</h4>
+                                <p class="mt-4 ml-4">Displays the date at which the article was posted.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Show featured image :</h4>
+                                <p class="mt-4 ml-4">Displays the article's featured image.</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section> 
+        <section id="featured_collection">
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Featured collection :</h2>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Collection :</h4>
+                                <p class="mt-4 ml-4">Select a collection from which to display products.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Maximum products to show :</h4>
+                                <p class="mt-4 ml-4">How many products to display from the selected collection..</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Layout settings :</h4>
+                                <p class="mt-4 ml-4">How many products per row (not working on slider).</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Slider settings :</h4>
+                                <p class="mt-4 ml-4">Displays products as a slider with "Autoplay" and "Scroll by" options.</p>
+                            </li>
+                        </ul>         
+                    </div>
+            </div>
+        </section>
+        <section id="featured_product">
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Featured product :</h2>
+                    <p class="text-md">Used to display a product along with it's options so that the users can quickly add it to their cart.</p>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Product :</h4>
+                                <p class="mt-4 ml-4">Select a the product that you want to display./<p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Desktop media second position :</h4>
+                                <p class="mt-4 ml-4">change the position of the product image and product description Left-Right Right-Left.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Looping  / Autoplay :</h4>
+                                <p class="mt-4 ml-4">If the product has a video.</p>
+                            </li>
+                        </ul>         
+                    </div>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Product info :</h4>
+                                <p class="mt-4 ml-4">Displays the product title, price and description.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Variant picker :</h4>
+                                <p class="mt-4 ml-4">Displays the different options of the product (if any) so the users can select different variants.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Buy button:</h4>
+                                <p class="mt-4 ml-4">Displays the add to cart button and optionally the dynamic checkout buttons.</p>
+                                <p><a href="https://help.shopify.com/en/manual/online-store/dynamic-checkout" target="_blank" class="docs_link" >Dynamic checkout buttons (Shopify)</a></p>
+
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Pickup availability :</h4>
+                                <p class="mt-4 ml-4">Displays information regarding the pickup availability of local stores (if any).</p>
+                                <p><a href="https://help.shopify.com/en/manual/sell-in-person/shopify-pos/order-management/local-pickup-for-online-orders" target="_blank" class="docs_link" >Docs</a></p>
+                            </li>
+                        </ul>        
+                    </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="bg-white mb-4 p-6">
+                    <h2 class="text-2xl mb-4  text-roboto">Footer :</h2>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto">Section settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Desktop Grid display type :</h4>
+                                <p class="mt-4 ml-4">Select the footer grid from 2 to 5 columns per row./<p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Titles text Color :</h4>
+                                <p class="mt-4 ml-4">change the titles colors.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Sub titles text Color :</h4>
+                                <p class="mt-4 ml-4">change the text color.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Social Media Icons :</h4>
+                                <p class="mt-4 ml-4">Used to add social media link to the footer (Newsletter/Footer) and change their color and background.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Payment Methods :</h4>
+                                <p class="mt-4 ml-4">Used to add the supported payments methods to the bottom footer.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Logo :</h4>
+                                <p class="mt-4 ml-4">Used to add the supported logo to the bottom footer and change it's width.</p>
+                            </li>
+                        </ul>         
+                    </div>
+                    <h2 class="text-sm mt-8 font-semibold text-roboto block_settings">Block settings</h2>
+                    <div class="mt-2 p-4 rounded-xl border-2 border-solid border-[#2e332e1c]">
+                        <ul class="">
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Product info :</h4>
+                                <p class="mt-4 ml-4">Displays the product title, price and description.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Variant picker :</h4>
+                                <p class="mt-4 ml-4">Displays the different options of the product (if any) so the users can select different variants.</p>
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Buy button:</h4>
+                                <p class="mt-4 ml-4">Displays the add to cart button and optionally the dynamic checkout buttons.</p>
+                                <p><a href="https://help.shopify.com/en/manual/online-store/dynamic-checkout" target="_blank" class="docs_link" >Dynamic checkout buttons (Shopify)</a></p>
+
+                            </li>
+                            <li class="text-md mb-8">
+                                <h4 class="font-bold inline-block mr-2 text-[#2e332e]">Pickup availability :</h4>
+                                <p class="mt-4 ml-4">Displays information regarding the pickup availability of local stores (if any).</p>
+                                <p><a href="https://help.shopify.com/en/manual/sell-in-person/shopify-pos/order-management/local-pickup-for-online-orders" target="_blank" class="docs_link" >Docs</a></p>
+                            </li>
+                        </ul>        
+                    </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </div>
+</div>
+
+    <script type="text/javascript" src="app.js" ></script>
+  </body>
+</html>
